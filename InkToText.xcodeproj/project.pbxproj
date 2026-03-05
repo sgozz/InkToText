@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0832AEB78B4969C0441D1750 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80C9348A67FBE07FA67EB6 /* ContentView.swift */; };
+		300491AE72A73BB12FD11D71 /* HandwritingRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A59F9209AABC86B5D2A3318 /* HandwritingRecognizer.swift */; };
+		55A30B0E3D20600FE756AA5B /* RecognizedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6C602F0F3A957F972FB7D /* RecognizedTextView.swift */; };
+		7D9763D9D064D6540106FB46 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49933199FD59455684AABFD9 /* CanvasView.swift */; };
+		83991A46A60B2795F2F63B3D /* InkToTextApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB6D7489075538EE8BFC40 /* InkToTextApp.swift */; };
+		FEFD01F0203D568D34D0E8DF /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1433B440D65412EA7B093139 /* CanvasViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1433B440D65412EA7B093139 /* CanvasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewModel.swift; sourceTree = "<group>"; };
+		49933199FD59455684AABFD9 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		6B80C9348A67FBE07FA67EB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8A59F9209AABC86B5D2A3318 /* HandwritingRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandwritingRecognizer.swift; sourceTree = "<group>"; };
+		8A9F95B8CDDC3E57AE86C0DE /* InkToText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InkToText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6AB6D7489075538EE8BFC40 /* InkToTextApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkToTextApp.swift; sourceTree = "<group>"; };
+		EBC6C602F0F3A957F972FB7D /* RecognizedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizedTextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4ADCAB94EB1FA3F444303C8A /* InkToText */ = {
+			isa = PBXGroup;
+			children = (
+				6B80C9348A67FBE07FA67EB6 /* ContentView.swift */,
+				E6AB6D7489075538EE8BFC40 /* InkToTextApp.swift */,
+				AD96CA76F0C55560DB58D2F1 /* Services */,
+				5EB67D28B5D0B103112A75A8 /* ViewModels */,
+				C3D234200C8984DFED82CA4A /* Views */,
+			);
+			path = InkToText;
+			sourceTree = "<group>";
+		};
+		52D7F32328894E75DB159552 = {
+			isa = PBXGroup;
+			children = (
+				4ADCAB94EB1FA3F444303C8A /* InkToText */,
+				E38487F868DD29EDC8232B19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EB67D28B5D0B103112A75A8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1433B440D65412EA7B093139 /* CanvasViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD96CA76F0C55560DB58D2F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A59F9209AABC86B5D2A3318 /* HandwritingRecognizer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C3D234200C8984DFED82CA4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49933199FD59455684AABFD9 /* CanvasView.swift */,
+				EBC6C602F0F3A957F972FB7D /* RecognizedTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E38487F868DD29EDC8232B19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A9F95B8CDDC3E57AE86C0DE /* InkToText.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A2FC25C2A503437A10EA514 /* InkToText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0D822D4DC35D066D266395 /* Build configuration list for PBXNativeTarget "InkToText" */;
+			buildPhases = (
+				99BF7805EFFBE19772543AAA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InkToText;
+			packageProductDependencies = (
+			);
+			productName = InkToText;
+			productReference = 8A9F95B8CDDC3E57AE86C0DE /* InkToText.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C8B9C0DB6507CF4D132BB33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = C5A116F7C1742C96FF512FFE /* Build configuration list for PBXProject "InkToText" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 52D7F32328894E75DB159552;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E38487F868DD29EDC8232B19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A2FC25C2A503437A10EA514 /* InkToText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99BF7805EFFBE19772543AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D9763D9D064D6540106FB46 /* CanvasView.swift in Sources */,
+				FEFD01F0203D568D34D0E8DF /* CanvasViewModel.swift in Sources */,
+				0832AEB78B4969C0441D1750 /* ContentView.swift in Sources */,
+				300491AE72A73BB12FD11D71 /* HandwritingRecognizer.swift in Sources */,
+				83991A46A60B2795F2F63B3D /* InkToTextApp.swift in Sources */,
+				55A30B0E3D20600FE756AA5B /* RecognizedTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		40D675BD99F88FC28CE36E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		971465DDC672041BBCF22C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_GENERATION_MODE = GeneratedByXcode;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inktotext.app;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTS_XR_DESIGNED_FOR = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E222803F8F17F9E88C67858B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_GENERATION_MODE = GeneratedByXcode;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inktotext.app;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTS_XR_DESIGNED_FOR = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		EDCA6C4D8D2421B0E9F28AC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5A116F7C1742C96FF512FFE /* Build configuration list for PBXProject "InkToText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDCA6C4D8D2421B0E9F28AC7 /* Debug */,
+				40D675BD99F88FC28CE36E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EC0D822D4DC35D066D266395 /* Build configuration list for PBXNativeTarget "InkToText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971465DDC672041BBCF22C2B /* Debug */,
+				E222803F8F17F9E88C67858B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C8B9C0DB6507CF4D132BB33 /* Project object */;
+}
